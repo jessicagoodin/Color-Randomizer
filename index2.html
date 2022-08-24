@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Color Randomizer</title>
+</head>
+<body>
+
+    <!-- TITLE -->
+    <div>
+        <h1>Color Randomizer</h1>
+    </div>
+
+    <!-- COLOR BOXES -->
+
+    <div class="grid-container" id="colors"> <!-- This is for the entire block of colors -->
+        <div class="box colorbox1">Hex code</div> <!-- The hex code will display here -->
+        <div class="box colorbox2">Hex code</div>
+        <div class="box colorbox3">Hex code</div>
+        <!-- With drop down selector option, more color boxes will be added (up to 6 for now)-->
+    </div>
+
+<!-- BUTTONS -->
+
+    <div class="grid-container" id="buttons">
+        <div class="grid-item"><button id="save">Save</button></div> <!-- Only functional when there is a login feature -->
+        <div class="grid-item"><button id="back">Back</button></div> <!-- Will store color set before current and go back to it when clicked -->
+        <div class="grid-item"><button id="randomize">Randomize!</button></div>
+    </div>
+</body>
+</html>

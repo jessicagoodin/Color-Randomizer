@@ -1,0 +1,70 @@
+h1 {
+    text-align: center;
+}
+
+#colors {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 30px;
+}
+
+.box {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    color: white; /* in JS, will change if hex color is brighter than "x" */
+}
+
+.colorbox1 {
+    background-color: blue; /* Colors will be updated by random color generator in JS*/
+}
+
+.colorbox2 {
+    background-color: green;
+}
+
+.colorbox3 {
+    background-color: red;
+}
+
+/* Buttons */
+
+#buttons button {
+    border: 2px solid black;
+    color: black;
+    display: grid;
+    grid-template-columns: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 40px;
+    width: 100%;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#buttons button:not(:last-child) {
+    border-right: none; /* Preventing double borders */
+}
+
+#buttons {
+    padding: 30px;
+    display: grid;
+    place-items: center;
+}
+
+#randomize:hover {
+    border: 2px solid lightcoral;
+}
+
+#save:hover {
+    border: 2px solid #fca311;
+}
+
+#back:hover {
+    border: 2px solid #32dcd5;
+}
