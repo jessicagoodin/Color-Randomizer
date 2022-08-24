@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <title>Color Palette Randomizer</title>
+</head>
+<body>
+    <!-- ENCASED IN SECTION FOR SPACING, AND COLUMNS -->
+    <section class="section"> 
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <!-- CARD THAT ENCASES COLOR BUTTONS -->
+                    <div class="card">
+                        <header class="card-header">
+                        <p class="card-header-title is-centered">
+                            Color Palette Generator
+                        </p>
+                        <button class="card-header-icon" aria-label="more options">
+                            <span class="icon">
+                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                        </header>
+                        <div class="card-content">
+                        <div class="content">
+                            <!-- Inserting color block columns based on which number is selected from dropdown -->
+                            <div class="colorbox1 has-background-primary">
+                            </div>
+                            <div class="colorbox2">
+                            </div>
+                            <div class="colorbox3">
+                            </div>
+                        </div>
+                        </div>
+                        <footer class="card-footer">
+                        <button class="button card-footer-item">Save</button> <!-- Creating a profile will allow you to save color palettes -->
+                        <button class="button card-footer-item">Back</button> <!-- Back will allow you to go to the last palette you had, if you accidentally clicked Randomize (will need to store the previous one and update it each time Randomize is clicked. Can only hit Back once.) -->
+                        <button class="button card-footer-item">Randomize!</button> <!-- Generates a whole new random set of colors! -->
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
