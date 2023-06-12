@@ -14,10 +14,11 @@ h1 {
     padding: 20px 0;
     font-size: 30px;
     color: white; /* in JS, will change if hex color is brighter than "x" */
+    /* Actually! I can't do that if I randomize 3 colors because one may be light, others may be dark... keeping white */
 }
 
 .colorbox1 {
-    background-color: blue; /* Colors will be updated by random color generator in JS*/
+    background-color: blue;
 }
 
 .colorbox2 {
